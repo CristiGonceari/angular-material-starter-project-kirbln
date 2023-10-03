@@ -1,0 +1,18 @@
+
+
+<app-file-upload
+  #fileUpload
+  [uploadSource]="_uploadSource"
+  [statusBar]="_showStatusBar"
+>
+  <input appFileUploadInput [multiple]="_allowMultiple" type="file" />
+  <app-file-upload-caption *ngIf="_showCaption">
+    Supported file types: PDF, TIFF, WORD, PNG, JPEG
+  </app-file-upload-caption>
+
+  <!-- <ng-container *appFileUploadItemAction="let uploadItem">
+    <button mat-button>Custom Action</button>
+  </ng-container> -->
+</app-file-upload>
+
+
